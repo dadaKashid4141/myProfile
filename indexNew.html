@@ -2,12 +2,8 @@
 <html>
 
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Merienda One' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,400;1,500&display=swap"
+        rel="stylesheet">
 
     <title> Index Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,6 +13,12 @@
             color: aquamarine;
             background-color: black;
             font-size: x-large;
+        }
+
+        .header {
+            display: inline;
+            margin: 20px;
+
         }
 
         .icon_margin {
@@ -32,17 +34,19 @@
             text-transform: uppercase;
             font-family: 'Roboto Mono', monospace;
             font-size: 22px;
-            background-color:rgb(5,68,104);
-            color:whitesmoke;
+            background-color: rgb(5, 68, 104);
+            color: whitesmoke;
             text-decoration: none;
             text-align: center;
-            text-shadow:rgb(248, 23, 91) 3px 2px 2px;
+            text-shadow: rgb(248, 23, 91) 3px 2px 2px;
+            margin: 20px;
         }
-        .nav_bar:hover{
-            color: greenyellow
-            ;
+
+        .nav_bar:hover {
+            color: greenyellow;
+
         }
-         
+
         #heading {
             color: rgb(243, 26, 214);
             word-spacing: 5px;
@@ -50,7 +54,7 @@
             font-family: 'Merienda One';
             font-size: 35px;
             text-shadow: rgb(29, 20, 20) -3px -4px 4px;
-           
+
         }
 
         #frame {
@@ -61,25 +65,26 @@
 
 <body>
     <header>
-        <span class="icon_margin"><i class="fa fa-user" aria-hidden="true"></i></span> <span class="nameMargin">Dada
-            Kashid</span>
-        <span class="icon_margin"><i class="fa fa-phone" aria-hidden="true"></i></span> <span
-            class="nameMargin">8308622215</span>
-        <span class="icon_margin"><i class="fa fa-envelope" aria-hidden="true"></i></span> <span class="nameMargin">
-            dadakashid4141@gmail.com</span>
+        <ul class="header">
+            <li class="header"><i class="fa fa-user" aria-hidden="true"></i> <span>Dada Kashid</span> </li>
+            <li class="header"><i class="fa fa-phone" aria-hidden="true"></i> <span>8308622215 </span> </li>
+            <li class="header"><i class="fa fa-envelope" aria-hidden="true"></i> <span> dadakashid4141@gmail.com </span>
+                </li<>
+        </ul>
     </header>
+
     <!--marquee is used to scrolling text,image on display-->
     <marquee behavior="sliding" direction="right" scrollamount="20">
         <h2 id="heading">~:~ My Profile ~:~ </h2>
     </marquee>
     <nav class="nav_bar">
-        <span class="nameMargin"><a class="nav_bar" href="home.html" target="my_frame"> HOME </a></span>
-        <span class="nameMargin"><a class="nav_bar" href="techStack.html" target="my_frame"> Tech Stack</a> </span>
-        <span class="nameMargin"><a class="nav_bar" href="educationDetails.html" target="my_frame">Education</a></span>
-        <span class="nameMargin"> <a class="nav_bar" href="projectDetails.html" target="my_frame">Project</a></span>
-        <span class="nameMargin"><a class="nav_bar" href="gallary.html" target="my_frame">Hobbies</a></span>
-        <span class="nameMargin"><a class="nav_bar" href="personalDetails.html" target="my_frame">Personal
-                Details</a></span>
+        <a class="nav_bar" href="home.html" target="my_frame"> HOME </a>
+        <a class="nav_bar" href="techStack.html" target="my_frame"> Tech Stack</a>
+        <a class="nav_bar" href="educationDetails.html" target="my_frame">Education</a>
+        <a class="nav_bar" href="projectDetails.html" target="my_frame">Project</a>
+        <a class="nav_bar" href="gallary.html" target="my_frame">Hobbies</a>
+        <a class="nav_bar" href="personalDetails.html" target="my_frame">Personal
+            Details</a>
         <a class="nav_bar" href="studentRegistrationForm.html" target="my_frame">Others</a>
 
     </nav>
@@ -87,15 +92,17 @@
     <iframe id="frame" name="my_frame" src="info.html" width="1000px" height="500px"></iframe> </iframe>
     <footer id="ftr">
         <strong class="icon_margin"> Follow me :-</strong>
-        <a href="https://www.facebook.com/" target="_blank" class="icon_margin"><i class="fa fa-facebook-official"
-                aria-hidden="true"></i></a>
+        <ul class="header">
+            <li class="header"> <a href="https://www.facebook.com/" target="_blank" class="icon_margin"><i
+                        class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 
-        <a href="https://www.linkedin.com/" target="_blank" class="icon_margin"><i class="fa fa-linkedin-square"
-                aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/" target="_blank" class="icon_margin"><i class="fa fa-instagram"
-                aria-hidden="true"></i></a>
-        <a href="https://www.google.com/" target="_blank" class="icon_margin"><i class="fa fa-google"
-                aria-hidden="true"></i></a>
+            <li class="header"><a href="https://www.linkedin.com/" target="_blank" class="icon_margin"><i
+                        class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+            <li class="header"><a href="https://www.instagram.com/" target="_blank" class="icon_margin"><i
+                        class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="header"><a href="https://www.google.com/" target="_blank" class="icon_margin"><i
+                        class="fa fa-google" aria-hidden="true"></i></a></li>
+        </ul>
     </footer>
 </body>
 
