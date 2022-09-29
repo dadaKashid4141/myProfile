@@ -2,63 +2,85 @@
 <html>
 
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Merienda One' rel='stylesheet'>
     <title> Technology Stack</title>
     <style>
-        table, tr, th, td {
+        tr,
+        th,
+        td {
             border: 1px solid rgb(46, 32, 14);
             border-collapse: collapse;
+
+        }
+
+        #tab {
+            border: solid;
+            border-color: red rgb(255, 161, 53) rgb(201, 58, 105) rgb(238, 195, 102);
+            border-collapse: collapse;
+            /* text-align: center; */
+            width: 350px;
+            height: 200px;
+            }
+
+        .th {
+         font-family: 'Merienda One';
+         padding: 25px 5px 25px 3px;
+
+          }
+
+        #h2 {
+            font-family: 'Merienda One';
+            font-size: 50px;
+            text-shadow: red 5px 3px 2px;
+            text-align: center;
+        }
+        .tdata{
+             padding: 10px 10px 10px 40px;
+          
         }
     </style>
-
 </head>
 
 <body>
-    <h2> Technology Stack </h2> 
+    <h2 id="h2"> -Technology Stack - </h2>
+    <table id="tab" align="center">
+        <thead id="th">
+            <tr>
+                <th  class="th"> Sr. No</th>
+                <th class="th"> Technology Stack</th>
+                <th class="th"> Rating </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tdata"> 1 </td>
+                <td class="tdata" > HTML </td>
+                <td class="tdata"> 4</td>
+            </tr>
 
-   <table>
-    <thead>
-        <tr>
-            <th> Sr. No</th>
-            <th> Technology Stack</th>
-            <th> Rating </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr> 
-            <td> 1 </td>
-            <td> HTML </td>
-            <td> 4</td>
-        </tr>
+            <tr>
+                <td class="tdata"> 2 </td>
+                <td class="tdata"> CSS </td>
+                <td class="tdata"> 4</td>
+            </tr>
 
-        <tr> 
-            <td> 2 </td>
-            <td> CSS </td>
-            <td> 4</td>
-        </tr>
+            <tr>
+                <td class="tdata"> 3 </td>
+                <td class="tdata"> JavaScript </td>
+                <td class="tdata"> 4</td>
+            </tr>
+            <tr>
+                <td class="tdata"> 4 </td>
+                <td class="tdata"> BootStrap </td>
+                <td class="tdata"> 2 </td>
+            </tr>
 
-        <tr> 
-            <td> 3 </td>
-            <td> JavaScript </td>
-            <td> 4</td>
-        </tr>
-        <tr> 
-            <td> 4 </td>
-            <td> BootStrap </td>
-            <td> 2 </td>
-        </tr>
-
-        <tr> 
-            <td> 5 </td>
-            <td> Angular </td>
-            <td> 4 </td>
-        </tr>
-
-    </tbody>
-
-
-
-   
-
+            <tr>
+                <td class="tdata"> 5 </td>
+                <td class="tdata"> Angular </td>
+                <td class="tdata"> 4 </td>
+            </tr>
+        </tbody>
 </body>
 
 </html>

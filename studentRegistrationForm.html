@@ -4,17 +4,36 @@
 <head>
     <title>Student Registration Form</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+    input[type="text"]{
+        color: rgb(165, 72, 72);
+        background: bisque;
+        width: 180px;
+        text-transform: uppercase;
+        border-radius: 10px;
+    }
+    input[type="submit"]{
+        background: rgb(162, 227, 229);
+        color:rgb(165, 72, 72);
+        width: 100px;
+        border-radius: 20px;
+        height: 30px;
+    }
+    input[type="submit"]:hover{
+            background: burlywood;
+        }
 
+</style>
 </head>
 
 <body>
 
     <h2> Student Registration form</h2>
     <form>
-        <table>
+        <table> <!--Table is used for display data in tabular form-->
             <tbody>
                 <tr>
-                    <td> <label> First Name </label> </td>
+                    <td> <label> First Name </label> </td><!--for titling or captioning-->
                     <td> <input type="text"  placeholder="First Name"  ><br><br> </td>  
                 </tr>
                 <tr>
@@ -39,12 +58,13 @@
                 </tr>
                 
                 <tr>
-                    <td><labe> Country</label></td>
+                    <td><label> Country</label></td>
                     <td> <input type="text" placeholder="India" disabled ><br><br></td>
 
                 </tr>
                 <tr>
                     <td><labe>State</label></td>
+                        <!-- this is drop-down list& It is used to choose only one option from many  -->
                     <td> <select>
                         <option>Maharashtra</option>
                         <option>Karnataka</option>
@@ -55,11 +75,11 @@
                 </tr>
                 
                 <tr>
-                    <td> <label> Profile Photo</label></td>
-                    <td> <input type="file"> </td>
+                    <td> <label> Profile Photo</label></td>    
+                    <td> <input type="file"> </td>                <!--for accepting file from user-->
                 </tr>
                 <tr>
-                    <td><label> All Marksheet</label></td>
+                    <td><label> All Marksheets</label></td>
                     <td><input type="file" multiple></td>
                 </tr>
                 <tr>
@@ -82,7 +102,7 @@
                   <tr>
                     <td><label>Training</label></td>
                     <td>
-                        <input type="checkbox"><label> Angular</label>
+                        <input type="checkbox"><label> Angular</label>      <!--selecting multiple option from few option-->
                         <input type="checkbox"><label>Ract</label>
                         <input type="checkbox"><label>Java</label>
                     </td>
@@ -91,7 +111,7 @@
                     <td><label>Gender</label></td>
                     <td><input type="radio" name="gender"><label>Female</label></td>
                     <td><input type="radio" name="gender" checked><label>Male</label></td>
-
+                        <!--radio for choose only one from few from same category-->
                    </tr>
 
                 <tr>

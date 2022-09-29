@@ -2,36 +2,53 @@
 <html>
 
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Merienda One' rel='stylesheet'>
     <title>Home</title>
-    <style>
-        #experience {
-            color: red;
-            background-color: rgb(129, 245, 245);
+    <style>/*this is id selector which has attribute=experience with "#" prefix */
+        .list {
+            color: rgb(14, 4, 14);
+            background-color: rgb(220, 235, 235);
+            list-style:circle;
+            margin: 20px;
         }
 
-        .title {
-            color: rgb(37, 22, 247);
-            background-color: rgba(250, 135, 217, 0.726);
+        .title{
+            color: rgb(23, 15, 126);
+            background-color: rgba(236, 179, 220, 0.726);
+            font-family: 'Merienda One';font-size: 22px;
+            text-transform: capitalize;
+          }
+    
+        p{
+            color: rgb(245, 66, 119);
+            
         }
+        .list li::selection{
+            background: cadetblue;
+        }
+
+        
     </style>
 </head>
 
 <body>
-    <h3 class="title"> Career Objectives</h3>
+    <h3 class="title"> career objectives:-</h3>
     <p> TO WORK IN ORGANIZATION WHERE I CAN LEARN AND GROW MY SKILLS AND HELP ORGANIZATIONAL GROWTH</p>
-    <h3 class="title"> Professional Summary</h3>
-    <ul>
-        <li> Having 1 years of experience in developing Single page Web Applications using <span
+    <h3 class="title"> professional summary:-</h3></marquee>
+    <ul class="list">
+        
+        <li class="list"> Having 1 years of experience in developing Single page Web Applications using <span
                 style="color: rgb(82, 245, 18);">Angular 8</span>, HTML5, CSS3,
             Bootstrap 5, JavaScript, TypeScript</li>
-        <li><span id="experience"> Experience on working with version control system - GIT and GitHub </span></li>
-        <li> Experience working with JIRA for user stories and bug tracking </li>
-        <li>Strong Debugging & Troubleshooting code experience using Chrome Developer Tool </li>
-        <li>Working exposure on ID's like VS Code and Notepad++ </li>
-        <li>Good working experience under Agile methodologies environment </li>
-        <li>Experience in using Chrome Developer Tool for debugging and Troubleshooting the code </li>
-        <li>Knowledge of NodeJS </li>
-        <li>Ability to work with people at all levels in the program </li>
+        <li class="list"> Experience on working with version control system - GIT and GitHub </span></li>
+        <li class="list"> Experience working with JIRA for user stories and bug tracking </li>
+        <li class="list">Strong Debugging & Troubleshooting code experience using Chrome Developer Tool </li>
+        <li class="list">Working exposure on ID's like VS Code and Notepad++ </li>
+        <li class="list">Good working experience under Agile methodologies environment </li>
+        <li class="list">Experience in using Chrome Developer Tool for debugging and Troubleshooting the code </li>
+        <li class="list">Knowledge of NodeJS </li>
+        <li class="list">Ability to work with people at all levels in the program </li>
+       
     </ul>
 </body>
 

@@ -2,48 +2,93 @@
 <html>
 
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Merienda One' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+
     <title> Index Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         header {
             text-align: center;
             color: aquamarine;
-            background-color: black
+            background-color: black;
+            font-size: x-large;
+        }
+
+        .icon_margin {
+            margin-right: 10px;
+        }
+
+        .nameMargin {
+            margin-right: 50px;
+        }
+
+        .nav_bar {
+
+            text-transform: uppercase;
+            font-family: 'Merienda One';
+            font-size: 22px;
+            background-color: bisque;
+            color: rgb(62, 144, 250);
+            text-decoration: none;
+            text-align: center;
+        }
+
+        #heading {
+            color: rgb(243, 26, 214);
+            word-spacing: 5px;
+            letter-spacing: 15px;
+            font-family: 'Merienda One';
+            font-size: 35px;
+            text-shadow: rgb(29, 20, 20) -3px -4px 4px;
+           }
+
+        #frame {
+            border: none;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <i class="fa fa-user" aria-hidden="true"></i> Dada Kashid
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        <i class="fa fa-phone" aria-hidden="true"></i>8308622215
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        <i class="fa fa-envelope" aria-hidden="true"></i>dadakashid4141@gmail.com
+        <span class="icon_margin"><i class="fa fa-user" aria-hidden="true"></i></span> <span class="nameMargin">Dada
+            Kashid</span>
+        <span class="icon_margin"><i class="fa fa-phone" aria-hidden="true"></i></span> <span
+            class="nameMargin">8308622215</span>
+        <span class="icon_margin"><i class="fa fa-envelope" aria-hidden="true"></i></span> <span class="nameMargin">
+            dadakashid4141@gmail.com</span>
     </header>
-    <h3> My Profile </h3>
-    <a href="home.html" target="my_frame"> HOME </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="techStack.html" target="my_frame"> Tech Stack</a> &nbsp; &nbsp; &nbsp; &nbsp;
-    <a href="educationDetails.html" target="my_frame">Education</a>&nbsp; &nbsp; &nbsp; &nbsp;
-    <a href="projectDetails.html" target="my_frame">Project</a>&nbsp; &nbsp; &nbsp; &nbsp;
-    <a href="gallary.html" target="my_frame">Hobbies</a>&nbsp; &nbsp; &nbsp; &nbsp;
-    <a href="personalDetails.html" target="my_frame">Personal Details</a>&nbsp; &nbsp; &nbsp; &nbsp;
-    <a href="studentRegistrationForm.html" target="my_frame">Other</a>
+    <!--marquee is used to scrolling text,image on display-->
+    <marquee behavior="sliding" direction="right" scrollamount="20">
+        <h2 id="heading">~:~ My Profile ~:~ </h2>
+    </marquee>
+    <nav class="nav_bar">
+        <span class="nameMargin"><a class="nav_bar" href="home.html" target="my_frame"> HOME </a></span>
+        <span class="nameMargin"><a class="nav_bar" href="techStack.html" target="my_frame"> Tech Stack</a> </span>
+        <span class="nameMargin"><a class="nav_bar" href="educationDetails.html" target="my_frame">Education</a></span>
+        <span class="nameMargin"> <a class="nav_bar" href="projectDetails.html" target="my_frame">Project</a></span>
+        <span class="nameMargin"><a class="nav_bar" href="gallary.html" target="my_frame">Hobbies</a></span>
+        <span class="nameMargin"><a class="nav_bar" href="personalDetails.html" target="my_frame">Personal
+                Details</a></span>
+        <a class="nav_bar" href="studentRegistrationForm.html" target="my_frame">Others</a>
 
-
+    </nav>
     <hr>
-    <iframe name="my_frame" src="info.html" width="1000px" height="500px"></iframe> </iframe>
-    <footer>
-        <strong> Follow me </strong> &nbsp; &nbsp; &nbsp;
-        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"
+    <iframe id="frame" name="my_frame" src="info.html" width="1000px" height="500px"></iframe> </iframe>
+    <footer id="ftr">
+        <strong class="icon_margin"> Follow me :-</strong>
+        <a href="https://www.facebook.com/" target="_blank" class="icon_margin"><i class="fa fa-facebook-official"
                 aria-hidden="true"></i></a>
-        &nbsp; &nbsp; &nbsp;
-        <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-        &nbsp; &nbsp; &nbsp;
-        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        &nbsp; &nbsp; &nbsp;
-        <a href="https://www.google.com/" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a> &nbsp;
-        &nbsp; &nbsp;
+
+        <a href="https://www.linkedin.com/" target="_blank" class="icon_margin"><i class="fa fa-linkedin-square"
+                aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" class="icon_margin"><i class="fa fa-instagram"
+                aria-hidden="true"></i></a>
+        <a href="https://www.google.com/" target="_blank" class="icon_margin"><i class="fa fa-google"
+                aria-hidden="true"></i></a>
     </footer>
 </body>
 
